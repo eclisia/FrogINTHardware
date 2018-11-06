@@ -1,4 +1,145 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7350 6700 0    50   ~ 0
+ATMega16U car possède USB et I2C
+Text Notes 7350 6950 0    50   ~ 0
+Diamètre trou = 35mm
+$Comp
+L FrogINT_PCBProto_V1811062154-cache:ATmega16U4RC-AU U?
+U 1 1 5BE236C9
+P 6000 2950
+F 0 "U?" H 6100 1150 50  0000 C CNN
+F 1 "ATmega16U4RC-AU" H 6000 973 50  0001 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 6000 2950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 6000 2950 50  0001 C CNN
+	1    6000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BE23858
+P 5900 900
+F 0 "#PWR?" H 5900 750 50  0001 C CNN
+F 1 "+3.3V" H 5915 1073 50  0000 C CNN
+F 2 "" H 5900 900 50  0001 C CNN
+F 3 "" H 5900 900 50  0001 C CNN
+	1    5900 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1150 6000 1100
+Wire Wire Line
+	6000 1100 5900 1100
+Connection ~ 5900 1100
+Wire Wire Line
+	5900 1100 5900 1150
+Wire Wire Line
+	6100 1150 6100 1100
+Wire Wire Line
+	6100 1100 6000 1100
+Connection ~ 6000 1100
+Wire Wire Line
+	5900 900  5900 1100
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5BE23980
+P 4850 3250
+F 0 "SW?" H 4850 3393 50  0000 C CNN
+F 1 "SW_SPST" H 4850 3394 50  0001 C CNN
+F 2 "" H 4850 3250 50  0001 C CNN
+F 3 "" H 4850 3250 50  0001 C CNN
+	1    4850 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE239E3
+P 4500 3300
+F 0 "#PWR?" H 4500 3050 50  0001 C CNN
+F 1 "GND" H 4505 3127 50  0000 C CNN
+F 2 "" H 4500 3300 50  0001 C CNN
+F 3 "" H 4500 3300 50  0001 C CNN
+	1    4500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3300 4500 3250
+Wire Wire Line
+	4500 3250 4650 3250
+$Comp
+L Device:R R?
+U 1 1 5BE23AA0
+P 5150 2950
+F 0 "R?" H 5220 2996 50  0000 L CNN
+F 1 "10k" H 5220 2905 50  0000 L CNN
+F 2 "" V 5080 2950 50  0001 C CNN
+F 3 "~" H 5150 2950 50  0001 C CNN
+	1    5150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BE23D54
+P 5150 900
+F 0 "#PWR?" H 5150 750 50  0001 C CNN
+F 1 "+3.3V" H 5165 1073 50  0000 C CNN
+F 2 "" H 5150 900 50  0001 C CNN
+F 3 "" H 5150 900 50  0001 C CNN
+	1    5150 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BE240E4
+P 5900 4850
+F 0 "#PWR?" H 5900 4600 50  0001 C CNN
+F 1 "GND" H 5905 4677 50  0000 C CNN
+F 2 "" H 5900 4850 50  0001 C CNN
+F 3 "" H 5900 4850 50  0001 C CNN
+	1    5900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4850 5900 4800
+Wire Wire Line
+	6000 4750 6000 4800
+Wire Wire Line
+	6000 4800 5900 4800
+Connection ~ 5900 4800
+Wire Wire Line
+	5900 4800 5900 4750
+NoConn ~ 5400 2000
+NoConn ~ 5400 2150
+Wire Wire Line
+	5050 3250 5150 3250
+Wire Wire Line
+	5150 3100 5150 3250
+Connection ~ 5150 3250
+Wire Wire Line
+	5150 3250 5400 3250
+Wire Wire Line
+	5150 900  5150 1400
+Wire Wire Line
+	5400 1500 5150 1500
+Connection ~ 5150 1500
+Wire Wire Line
+	5150 1500 5150 2800
+Wire Wire Line
+	5400 1400 5150 1400
+Connection ~ 5150 1400
+Wire Wire Line
+	5150 1400 5150 1500
 $EndSCHEMATC
