@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name FrogINT_PCBProto_V1811062154-cache)(type Legacy)(uri "H:/Mes Documents/Cloud-Station_Florelie/Cloud-Station_Florent/Electronique/Projet_FrogINT/FrogINTHardware/04_Electronique/FrogINT_PCBProto_V1811062154/FrogINT_PCBProto_V1811062154-cache.lib")(options "")(descr ""))
+  (lib (name Connector_FTA)(type Legacy)(uri D:/Documents/Cloud-Station_Florelie/Electronique/Projet_FrogINT/FrogINTHardware/04_Electronique/FrogINT_PCBProto_V1811062154/Library/Connector_FTA.lib)(options "")(descr ""))
+  (lib (name FrogINT_PCBProto_V1811062154-cache)(type Legacy)(uri ${KIPRJMOD}/FrogINT_PCBProto_V1811062154-cache.lib)(options "")(descr ""))
 )
