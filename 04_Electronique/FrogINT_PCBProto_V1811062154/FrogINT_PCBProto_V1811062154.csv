@@ -1,0 +1,34 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C,C4 C7,0.1µF,CP_EIA-2012-12_Kemet-R,2,
+2,Unpolarized capacitor,C,C2 C3 C10,100nF,CP_EIA-2012-12_Kemet-R,3,
+3,Unpolarized capacitor,C,C8,1µF,CP_EIA-2012-12_Kemet-R,1,
+4,Unpolarized capacitor,C,C5 C6,22pF,CP_EIA-2012-12_Kemet-R,2,
+5,Polarised capacitor,CP,C1 C9,22µF,CP_EIA-2012-12_Kemet-R,2,
+6,RGB LED with integrated controller,WS2812B,D1 D2 D3,WS2812B,LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,3,https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
+7,"resettable fuse, polymeric positive temperature coefficient (PPTC), small symbol",Polyfuse_Small,F1,Polyfuse MF-MSMF050-2,Fuse_1206_3216Metric,1,
+8,Atmel 10-pin JTAG connector,AVR-JTAG-10,J3,AVR-JTAG-10,PinHeader_2x05_P2.54mm_Horizontal,1,
+9,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x01_Female,J2,Conn_01x01_Female,PinHeader_1x01_P2.54mm_Horizontal,1,
+10,,USB_B_Mini-Connector_FTA,J1,USB_B_Mini,USB_Micro-B_Amphenol_10103594-0001LF_Horizontal,1,
+11,Transistor P-MOSFET with substrate diode (general),Q_PMOS_DGS,Q1 Q2,PMV48XP,SOT-23-6,2,
+12,Resistor,R,R1 R4 R5 R6,10k,R_0603_1608Metric,4,
+13,Resistor,R,R2 R3,22,R_0603_1608Metric,2,
+14,Single Pole Single Throw (SPST) switch,SW_SPST,SW1 SW2,SW_SPST,SW_SPST_B3S-1000,2,
+15,,ATmega16U4RC-AU,U3,ATmega16U4RC-AU,TQFP-44_10x10mm_P0.8mm,1,
+16,"150mA 16V Low-noise Low-dropout Regulator With Shutdown, 1.8V output voltage, SOT-23-5",LP2985-3.3,U2,LP2985-3.3,SOT-23-5,1,http://www.ti.com/lit/ds/symlink/lp2985.pdf
+17,"1A Low Dropout regulator, positive, 1.5V fixed output, SOT-223",NCP1117-5.0_SOT223,U1,NCP1117-5.0_SOT223,SOT-223-3_TabPin2,1,http://www.diodes.com/datasheets/AP1117.pdf
+18,Two pin crystal,Crystal,Y1,16MHz,Crystal_HC18-U_Vertical,1,
+
+
+
+
+
+Component Groups:,18
+Component Count:,31
+Fitted Components:,31
+Number of PCBs:,1
+Total components:,31
+Schematic Version:,Rev-00
+Schematic Date:,2018-11-15
+BoM Date:,27/11/2018 09:53:04
+Schematic Source:,D:\Users\taintuf\Downloads\FrogINTHardware-PCBPrototype\FrogINTHardware-aaf0e1b874606badb14025873efa0ebda44d5a59\04_Electronique\FrogINT_PCBProto_V1811062154\FrogINT_PCBProto_V1811062154.sch
+KiCad Version:,Eeschema (5.0.0)
