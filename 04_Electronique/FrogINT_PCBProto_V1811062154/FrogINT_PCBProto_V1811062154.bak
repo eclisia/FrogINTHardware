@@ -1053,7 +1053,7 @@ Wire Wire Line
 	8850 5700 8250 5700
 Wire Wire Line
 	8850 5800 8450 5800
-Text Label 7700 5800 0    50   ~ 0
+Text Label 7850 5800 0    50   ~ 0
 Cap-TouchSensor
 $Comp
 L power:GND #PWR027
@@ -1085,7 +1085,7 @@ Wire Wire Line
 	8450 5850 8450 5800
 Connection ~ 8450 5800
 Wire Wire Line
-	8450 5800 7550 5800
+	8450 5800 7800 5800
 Wire Wire Line
 	8450 6150 8450 6200
 Wire Wire Line
@@ -1094,7 +1094,7 @@ Connection ~ 8750 6200
 Wire Wire Line
 	8750 6200 8750 6250
 $Comp
-L SamacSys_Parts:TTP223-BA6 IC1
+L FrogINT_PCBProto_V1811062154-rescue:TTP223-BA6-SamacSys_Parts IC1
 U 1 1 5C3A6478
 P 8850 5700
 F 0 "IC1" H 9400 5965 50  0000 C CNN
@@ -1179,14 +1179,15 @@ Wire Notes Line
 Text Notes 6950 5300 0    50   ~ 0
 Touch Sense
 $Comp
-L SamacSys_Parts:TouchSensePanel U4
-U 1 1 5C40483E
-P 7350 5800
-F 0 "U4" H 7339 5535 50  0000 C CNN
-F 1 "TouchSensePanel" H 7339 5626 50  0000 C CNN
-F 2 "SamacSys_PCB_Library:TouchSensePad" H 7350 5800 50  0001 C CNN
-F 3 "" H 7350 5800 50  0001 C CNN
-	1    7350 5800
-	-1   0    0    1   
+L FTA_FrogINT_library:TouchSense TS1
+U 1 1 5C39FC70
+P 7400 5800
+F 0 "TS1" H 7456 6265 50  0000 C CNN
+F 1 "TouchSense" H 7456 6174 50  0000 C CNN
+F 2 "FTA_FrogINT_Library_Footprint_Package:CapacitiveTouchSense_Bottom_10mm" H 7400 5800 50  0001 C CNN
+F 3 "" H 7400 5800 50  0001 C CNN
+	1    7400 5800
+	1    0    0    -1  
 $EndComp
+NoConn ~ 6600 2950
 $EndSCHEMATC

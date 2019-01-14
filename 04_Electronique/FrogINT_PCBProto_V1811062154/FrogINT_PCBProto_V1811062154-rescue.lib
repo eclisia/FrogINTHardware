@@ -1,6 +1,41 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# TTP223-BA6-SamacSys_Parts
+#
+DEF TTP223-BA6-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "TTP223-BA6-SamacSys_Parts" 950 200 50 H V L CNN
+F2 "SOT95P285X126-6N" 950 100 50 H I L CNN
+F3 "https://radiokot.ru/konkursCatDay2014/53/01.pdf" 950 0 50 H I L CNN
+F4 "1 KEY TOUCH PAD DETECTOR IC" 950 -100 50 H I L CNN "Description"
+F5 "1.26" 950 -200 50 H I L CNN "Height"
+F6 "TONTEK" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TTP223-BA6" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -300 200 -300 200 100 N
+X Q 1 0 0 200 R 50 50 0 0 B
+X VSS 2 0 -200 200 R 50 50 0 0 B
+X I 3 0 -100 200 R 50 50 0 0 B
+X AHLB 4 1100 -200 200 L 50 50 0 0 B
+X VDD 5 1100 0 200 L 50 50 0 0 B
+X TOG 6 1100 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# TouchSensePanel-SamacSys_Parts
+#
+DEF TouchSensePanel-SamacSys_Parts U 0 40 Y Y 1 F N
+F0 "U" 0 -100 50 H V C CNN
+F1 "TouchSensePanel-SamacSys_Parts" 50 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 100 0 1 0 N
+X Sense 1 -200 0 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
 # USB_B_Mini-Connector_FTA
 #
 DEF USB_B_Mini-Connector_FTA J 0 40 Y Y 1 F N
