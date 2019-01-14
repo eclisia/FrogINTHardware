@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FT2232HL-REEL
+D FTDI Chip FT2232HL-REEL, USB Controller, 4-channel, 480MBps, USB 2.0, 64-Pin LQFP
+F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP TTP223-BA6
+D 1 KEY TOUCH PAD DETECTOR IC
+F https://radiokot.ru/konkursCatDay2014/53/01.pdf
+$ENDCMP
+#
+#End Doc Library

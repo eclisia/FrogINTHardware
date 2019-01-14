@@ -40,31 +40,20 @@ Connection ~ 6000 1100
 Wire Wire Line
 	5900 900  5900 1100
 $Comp
-L Switch:SW_SPST SW2
-U 1 1 5BE23980
-P 4050 3250
-F 0 "SW2" H 4050 3393 50  0000 C CNN
-F 1 "SW_SPST" H 4050 3394 50  0001 C CNN
-F 2 "FTA_FrogINT_Library_Footprint_Package:SW_SPST_B3S-1000" H 4050 3250 50  0001 C CNN
-F 3 "" H 4050 3250 50  0001 C CNN
-	1    4050 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR012
 U 1 1 5BE239E3
-P 3700 3300
-F 0 "#PWR012" H 3700 3050 50  0001 C CNN
-F 1 "GND" H 3705 3127 50  0000 C CNN
-F 2 "" H 3700 3300 50  0001 C CNN
-F 3 "" H 3700 3300 50  0001 C CNN
-	1    3700 3300
+P 3200 3300
+F 0 "#PWR012" H 3200 3050 50  0001 C CNN
+F 1 "GND" H 3205 3127 50  0000 C CNN
+F 2 "" H 3200 3300 50  0001 C CNN
+F 3 "" H 3200 3300 50  0001 C CNN
+	1    3200 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 3300 3700 3250
+	3200 3300 3200 3250
 Wire Wire Line
-	3700 3250 3850 3250
+	3200 3250 3300 3250
 $Comp
 L Device:R R6
 U 1 1 5BE23AA0
@@ -108,7 +97,7 @@ Connection ~ 5900 4800
 Wire Wire Line
 	5900 4800 5900 4750
 Wire Wire Line
-	4250 3250 4350 3250
+	4150 3250 4350 3250
 Wire Wire Line
 	4350 3100 4350 3250
 Connection ~ 4350 3250
@@ -145,66 +134,52 @@ Wire Notes Line
 Text Notes 9100 2850 0    50   ~ 0
 JTAG
 $Comp
-L Switch:SW_SPST SW1
-U 1 1 5BE9F989
-P 1100 1750
-F 0 "SW1" H 1100 1893 50  0000 C CNN
-F 1 "SW_SPST" H 1100 1894 50  0001 C CNN
-F 2 "FTA_FrogINT_Library_Footprint_Package:SW_SPST_B3S-1000" H 1100 1750 50  0001 C CNN
-F 3 "" H 1100 1750 50  0001 C CNN
-	1    1100 1750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR01
 U 1 1 5BEA031E
-P 800 1800
-F 0 "#PWR01" H 800 1550 50  0001 C CNN
-F 1 "GND" H 805 1627 50  0000 C CNN
-F 2 "" H 800 1800 50  0001 C CNN
-F 3 "" H 800 1800 50  0001 C CNN
-	1    800  1800
+P 750 1900
+F 0 "#PWR01" H 750 1650 50  0001 C CNN
+F 1 "GND" H 755 1727 50  0000 C CNN
+F 2 "" H 750 1900 50  0001 C CNN
+F 3 "" H 750 1900 50  0001 C CNN
+	1    750  1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  1750 800  1750
-Wire Wire Line
-	800  1750 800  1800
+	750  1850 750  1900
 $Comp
 L Device:R R1
 U 1 1 5BEA062B
-P 1300 1350
-F 0 "R1" H 1370 1396 50  0000 L CNN
-F 1 "10k" H 1370 1305 50  0000 L CNN
-F 2 "FTA_FrogINT_Library_Footprint_Package:R_0603_1608Metric" V 1230 1350 50  0001 C CNN
-F 3 "~" H 1300 1350 50  0001 C CNN
-	1    1300 1350
+P 1850 1350
+F 0 "R1" H 1920 1396 50  0000 L CNN
+F 1 "10k" H 1920 1305 50  0000 L CNN
+F 2 "FTA_FrogINT_Library_Footprint_Package:R_0603_1608Metric" V 1780 1350 50  0001 C CNN
+F 3 "~" H 1850 1350 50  0001 C CNN
+	1    1850 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR04
 U 1 1 5BEA067C
-P 1300 1100
-F 0 "#PWR04" H 1300 950 50  0001 C CNN
-F 1 "+3.3V" H 1315 1273 50  0000 C CNN
-F 2 "" H 1300 1100 50  0001 C CNN
-F 3 "" H 1300 1100 50  0001 C CNN
-	1    1300 1100
+P 1850 1100
+F 0 "#PWR04" H 1850 950 50  0001 C CNN
+F 1 "+3.3V" H 1865 1273 50  0000 C CNN
+F 2 "" H 1850 1100 50  0001 C CNN
+F 3 "" H 1850 1100 50  0001 C CNN
+	1    1850 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 1100 1300 1200
+	1850 1100 1850 1200
 Wire Wire Line
-	1300 1500 1300 1750
-Connection ~ 1300 1750
+	1850 1500 1850 1750
 Text Label 4650 3600 0    50   ~ 0
 Input_Interrupt
 Wire Wire Line
 	5500 3600 4650 3600
-Text Label 1600 1750 0    50   ~ 0
+Text Label 2150 1750 0    50   ~ 0
 Input_Interrupt
 Wire Wire Line
-	1300 1750 1600 1750
+	1850 1750 2150 1750
 Wire Wire Line
 	6600 4350 9500 4350
 $Comp
@@ -1179,7 +1154,7 @@ Wire Notes Line
 Text Notes 6950 5300 0    50   ~ 0
 Touch Sense
 $Comp
-L FTA_FrogINT_library:TouchSense TS1
+L FrogINT_PCBProto_V1811062154-rescue:TouchSense-FTA_FrogINT_library TS1
 U 1 1 5C39FC70
 P 7400 5800
 F 0 "TS1" H 7456 6265 50  0000 C CNN
@@ -1190,4 +1165,71 @@ F 3 "" H 7400 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6600 2950
+$Comp
+L SamacSys_Parts:SKQGAKE010 S1
+U 1 1 5C3DDA07
+P 950 1750
+F 0 "S1" H 1350 2015 50  0000 C CNN
+F 1 "SKQGAKE010" H 1350 1924 50  0000 C CNN
+F 2 "SamacSys_Parts:SKQGAKE010" H 1600 1850 50  0001 L CNN
+F 3 "http://uk.rs-online.com/webdocs/10d6/0900766b810d6137.pdf" H 1600 1750 50  0001 L CNN
+F 4 "Tact switch,SMT,SPST,with stem,3.43N o/f Stem Tactile Switch, SPST-NO 50 mA 1.5mm" H 1600 1650 50  0001 L CNN "Description"
+F 5 "" H 1600 1550 50  0001 L CNN "Height"
+F 6 "ALPS" H 1600 1450 50  0001 L CNN "Manufacturer_Name"
+F 7 "SKQGAKE010" H 1600 1350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "7582076P" H 1600 1250 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/7582076P" H 1600 1150 50  0001 L CNN "RS Price/Stock"
+F 10 "688-SKQGAKE010" H 1600 1050 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=688-SKQGAKE010" H 1600 950 50  0001 L CNN "Mouser Price/Stock"
+	1    950  1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SKQGAKE010 S2
+U 1 1 5C3DDAF3
+P 3350 3250
+F 0 "S2" H 3750 3515 50  0000 C CNN
+F 1 "SKQGAKE010" H 3750 3424 50  0000 C CNN
+F 2 "SamacSys_Parts:SKQGAKE010" H 4000 3350 50  0001 L CNN
+F 3 "http://uk.rs-online.com/webdocs/10d6/0900766b810d6137.pdf" H 4000 3250 50  0001 L CNN
+F 4 "Tact switch,SMT,SPST,with stem,3.43N o/f Stem Tactile Switch, SPST-NO 50 mA 1.5mm" H 4000 3150 50  0001 L CNN "Description"
+F 5 "" H 4000 3050 50  0001 L CNN "Height"
+F 6 "ALPS" H 4000 2950 50  0001 L CNN "Manufacturer_Name"
+F 7 "SKQGAKE010" H 4000 2850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "7582076P" H 4000 2750 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/7582076P" H 4000 2650 50  0001 L CNN "RS Price/Stock"
+F 10 "688-SKQGAKE010" H 4000 2550 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=688-SKQGAKE010" H 4000 2450 50  0001 L CNN "Mouser Price/Stock"
+	1    3350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  1850 850  1850
+Wire Wire Line
+	950  1750 850  1750
+Wire Wire Line
+	850  1750 850  1850
+Connection ~ 850  1850
+Wire Wire Line
+	850  1850 950  1850
+Wire Wire Line
+	1850 1750 1800 1750
+Connection ~ 1850 1750
+Wire Wire Line
+	1750 1850 1800 1850
+Wire Wire Line
+	1800 1850 1800 1750
+Connection ~ 1800 1750
+Wire Wire Line
+	1800 1750 1750 1750
+Wire Wire Line
+	4150 3350 4150 3250
+Connection ~ 4150 3250
+Wire Wire Line
+	3350 3350 3300 3350
+Wire Wire Line
+	3300 3350 3300 3250
+Connection ~ 3300 3250
+Wire Wire Line
+	3300 3250 3350 3250
 $EndSCHEMATC

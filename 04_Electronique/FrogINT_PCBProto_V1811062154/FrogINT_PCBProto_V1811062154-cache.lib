@@ -184,22 +184,6 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# FTA_FrogINT_library_TouchSense
-#
-DEF FTA_FrogINT_library_TouchSense TS 0 40 Y Y 1 F N
-F0 "TS" 0 350 50 H V C CNN
-F1 "FTA_FrogINT_library_TouchSense" 0 100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Button*
-$ENDFPLIST
-DRAW
-C 0 0 300 0 1 0 N
-X Sense 1 400 0 100 L 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
 # FrogINT_PCBProto_V1811062154-cache_ATmega16U4RC-AU
 #
 DEF FrogINT_PCBProto_V1811062154-cache_ATmega16U4RC-AU U 0 20 Y Y 1 F N
@@ -279,6 +263,22 @@ X I 3 0 -100 200 R 50 50 0 0 B
 X AHLB 4 1100 -200 200 L 50 50 0 0 B
 X VDD 5 1100 0 200 L 50 50 0 0 B
 X TOG 6 1100 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# FrogINT_PCBProto_V1811062154-rescue_TouchSense-FTA_FrogINT_library
+#
+DEF FrogINT_PCBProto_V1811062154-rescue_TouchSense-FTA_FrogINT_library TS 0 40 Y Y 1 F N
+F0 "TS" 0 350 50 H V C CNN
+F1 "FrogINT_PCBProto_V1811062154-rescue_TouchSense-FTA_FrogINT_library" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Button*
+$ENDFPLIST
+DRAW
+C 0 0 300 0 1 0 N
+X Sense 1 400 0 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
@@ -387,19 +387,26 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_SPST
+# SamacSys_Parts_SKQGAKE010
 #
-DEF Switch_SW_SPST SW 0 0 Y N 1 F N
-F0 "SW" 0 125 50 H V C CNN
-F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF SamacSys_Parts_SKQGAKE010 S 0 30 Y Y 1 F N
+F0 "S" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_SKQGAKE010" 650 200 50 H V L CNN
+F2 "SKQGAKE010" 650 100 50 H I L CNN
+F3 "http://uk.rs-online.com/webdocs/10d6/0900766b810d6137.pdf" 650 0 50 H I L CNN
+F4 "Tact switch,SMT,SPST,with stem,3.43N o/f Stem Tactile Switch, SPST-NO 50 mA 1.5mm" 650 -100 50 H I L CNN "Description"
+F5 "ALPS" 650 -300 50 H I L CNN "Manufacturer_Name"
+F6 "SKQGAKE010" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "7582076P" 650 -500 50 H I L CNN "RS Part Number"
+F8 "http://uk.rs-online.com/web/p/products/7582076P" 650 -600 50 H I L CNN "RS Price/Stock"
+F9 "688-SKQGAKE010" 650 -700 50 H I L CNN "Mouser Part Number"
+F10 "https://www.mouser.com/Search/Refine.aspx?Keyword=688-SKQGAKE010" 650 -800 50 H I L CNN "Mouser Price/Stock"
 DRAW
-C -80 0 20 0 0 0 N
-C 80 0 20 0 0 0 N
-P 2 0 0 0 -60 10 60 70 N
-X A 1 -200 0 100 R 50 50 1 1 P
-X B 2 200 0 100 L 50 50 1 1 P
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 B
+X 2 2 0 -100 200 R 50 50 0 0 B
+X 3 3 800 0 200 L 50 50 0 0 B
+X 4 4 800 -100 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #

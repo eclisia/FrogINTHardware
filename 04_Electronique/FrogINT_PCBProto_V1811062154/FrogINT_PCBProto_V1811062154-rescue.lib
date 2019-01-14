@@ -23,6 +23,22 @@ X TOG 6 1100 -100 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
+# TouchSense-FTA_FrogINT_library
+#
+DEF TouchSense-FTA_FrogINT_library TS 0 40 Y Y 1 F N
+F0 "TS" 0 350 50 H V C CNN
+F1 "TouchSense-FTA_FrogINT_library" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Button*
+$ENDFPLIST
+DRAW
+C 0 0 300 0 1 0 N
+X Sense 1 400 0 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
 # TouchSensePanel-SamacSys_Parts
 #
 DEF TouchSensePanel-SamacSys_Parts U 0 40 Y Y 1 F N
