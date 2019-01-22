@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TouchSense
+D Capacitive Touch Sense Pad as Button Switch
+K Button Switch Capacitive touch
+$ENDCMP
+#
+#End Doc Library
