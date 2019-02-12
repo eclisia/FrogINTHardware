@@ -25,4 +25,10 @@ D Capacitive touche sense pad for TTP223
 K touch sense pad
 $ENDCMP
 #
+$CMP PTS810SJG250SMTRLFS
+D PTS810SJG250SMTRLFS (Tactile Switches) Switch Tactile N.O. SPST Button J-Bend 0.05A 16VDC 100000Cycles 3.92N SMD T/R
+K
+F https://www.ckswitches.com/media/1476/pts810.pdf
+$ENDCMP
+#
 #End Doc Library

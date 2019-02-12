@@ -42,18 +42,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR012
 U 1 1 5BE239E3
-P 3200 3300
-F 0 "#PWR012" H 3200 3050 50  0001 C CNN
-F 1 "GND" H 3205 3127 50  0000 C CNN
-F 2 "" H 3200 3300 50  0001 C CNN
-F 3 "" H 3200 3300 50  0001 C CNN
-	1    3200 3300
+P 2800 3400
+F 0 "#PWR012" H 2800 3150 50  0001 C CNN
+F 1 "GND" H 2805 3227 50  0000 C CNN
+F 2 "" H 2800 3400 50  0001 C CNN
+F 3 "" H 2800 3400 50  0001 C CNN
+	1    2800 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 3300 3200 3250
+	2800 3400 2800 3350
 Wire Wire Line
-	3200 3250 3300 3250
+	2800 3350 2900 3350
 $Comp
 L Device:R R6
 U 1 1 5BE23AA0
@@ -97,10 +97,7 @@ Connection ~ 5900 4800
 Wire Wire Line
 	5900 4800 5900 4750
 Wire Wire Line
-	4150 3250 4350 3250
-Wire Wire Line
 	4350 3100 4350 3250
-Connection ~ 4350 3250
 Wire Wire Line
 	4350 3250 5400 3250
 Wire Wire Line
@@ -149,37 +146,37 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 5BEA062B
-P 1850 1350
-F 0 "R1" H 1920 1396 50  0000 L CNN
-F 1 "10k" H 1920 1305 50  0000 L CNN
-F 2 "FTA_FrogINT_Library_Footprint_Package:R_0603_1608Metric" V 1780 1350 50  0001 C CNN
-F 3 "~" H 1850 1350 50  0001 C CNN
-	1    1850 1350
+P 2250 1350
+F 0 "R1" H 2320 1396 50  0000 L CNN
+F 1 "10k" H 2320 1305 50  0000 L CNN
+F 2 "FTA_FrogINT_Library_Footprint_Package:R_0603_1608Metric" V 2180 1350 50  0001 C CNN
+F 3 "~" H 2250 1350 50  0001 C CNN
+	1    2250 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR04
 U 1 1 5BEA067C
-P 1850 1100
-F 0 "#PWR04" H 1850 950 50  0001 C CNN
-F 1 "+3.3V" H 1865 1273 50  0000 C CNN
-F 2 "" H 1850 1100 50  0001 C CNN
-F 3 "" H 1850 1100 50  0001 C CNN
-	1    1850 1100
+P 2250 1100
+F 0 "#PWR04" H 2250 950 50  0001 C CNN
+F 1 "+3.3V" H 2265 1273 50  0000 C CNN
+F 2 "" H 2250 1100 50  0001 C CNN
+F 3 "" H 2250 1100 50  0001 C CNN
+	1    2250 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 1100 1850 1200
+	2250 1100 2250 1200
 Wire Wire Line
-	1850 1500 1850 1750
+	2250 1500 2250 1750
 Text Label 4650 3600 0    50   ~ 0
 Input_Interrupt
 Wire Wire Line
 	5500 3600 4650 3600
-Text Label 2150 1750 0    50   ~ 0
+Text Label 2550 1750 0    50   ~ 0
 Input_Interrupt
 Wire Wire Line
-	1850 1750 2150 1750
+	2250 1750 2550 1750
 Wire Wire Line
 	6600 4350 9500 4350
 $Comp
@@ -1163,71 +1160,76 @@ F 3 "" H 7400 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6600 2950
-$Comp
-L FrogINT_PCBProto_V1811062154-rescue:SKQGAKE010-SamacSys_Parts S1
-U 1 1 5C3DDA07
-P 950 1750
-F 0 "S1" H 1350 2015 50  0000 C CNN
-F 1 "SKQGAKE010" H 1350 1924 50  0000 C CNN
-F 2 "SamacSys_Parts:SKQGAKE010" H 1600 1850 50  0001 L CNN
-F 3 "http://uk.rs-online.com/webdocs/10d6/0900766b810d6137.pdf" H 1600 1750 50  0001 L CNN
-F 4 "Tact switch,SMT,SPST,with stem,3.43N o/f Stem Tactile Switch, SPST-NO 50 mA 1.5mm" H 1600 1650 50  0001 L CNN "Description"
-F 5 "" H 1600 1550 50  0001 L CNN "Height"
-F 6 "ALPS" H 1600 1450 50  0001 L CNN "Manufacturer_Name"
-F 7 "SKQGAKE010" H 1600 1350 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "7582076P" H 1600 1250 50  0001 L CNN "RS Part Number"
-F 9 "http://uk.rs-online.com/web/p/products/7582076P" H 1600 1150 50  0001 L CNN "RS Price/Stock"
-F 10 "688-SKQGAKE010" H 1600 1050 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=688-SKQGAKE010" H 1600 950 50  0001 L CNN "Mouser Price/Stock"
-	1    950  1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L FrogINT_PCBProto_V1811062154-rescue:SKQGAKE010-SamacSys_Parts S2
-U 1 1 5C3DDAF3
-P 3350 3250
-F 0 "S2" H 3750 3515 50  0000 C CNN
-F 1 "SKQGAKE010" H 3750 3424 50  0000 C CNN
-F 2 "SamacSys_Parts:SKQGAKE010" H 4000 3350 50  0001 L CNN
-F 3 "http://uk.rs-online.com/webdocs/10d6/0900766b810d6137.pdf" H 4000 3250 50  0001 L CNN
-F 4 "Tact switch,SMT,SPST,with stem,3.43N o/f Stem Tactile Switch, SPST-NO 50 mA 1.5mm" H 4000 3150 50  0001 L CNN "Description"
-F 5 "" H 4000 3050 50  0001 L CNN "Height"
-F 6 "ALPS" H 4000 2950 50  0001 L CNN "Manufacturer_Name"
-F 7 "SKQGAKE010" H 4000 2850 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "7582076P" H 4000 2750 50  0001 L CNN "RS Part Number"
-F 9 "http://uk.rs-online.com/web/p/products/7582076P" H 4000 2650 50  0001 L CNN "RS Price/Stock"
-F 10 "688-SKQGAKE010" H 4000 2550 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=688-SKQGAKE010" H 4000 2450 50  0001 L CNN "Mouser Price/Stock"
-	1    3350 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	750  1850 850  1850
 Wire Wire Line
 	950  1750 850  1750
 Wire Wire Line
 	850  1750 850  1850
-Connection ~ 850  1850
 Wire Wire Line
 	850  1850 950  1850
 Wire Wire Line
-	1850 1750 1800 1750
-Connection ~ 1850 1750
+	2250 1750 2200 1750
+Connection ~ 2250 1750
 Wire Wire Line
-	1750 1850 1800 1850
+	2150 1850 2200 1850
 Wire Wire Line
-	1800 1850 1800 1750
-Connection ~ 1800 1750
+	2200 1850 2200 1750
+Connection ~ 2200 1750
 Wire Wire Line
-	1800 1750 1750 1750
+	2200 1750 2150 1750
 Wire Wire Line
-	4150 3350 4150 3250
-Connection ~ 4150 3250
+	2950 3450 2900 3450
 Wire Wire Line
-	3350 3350 3300 3350
+	2900 3450 2900 3350
+Connection ~ 2900 3350
 Wire Wire Line
-	3300 3350 3300 3250
-Connection ~ 3300 3250
+	2900 3350 2950 3350
+$Comp
+L SamacSys_Parts:PTS810SJG250SMTRLFS S1
+U 1 1 5C636FCC
+P 950 1750
+F 0 "S1" H 1550 2015 50  0000 C CNN
+F 1 "PTS810SJG250SMTRLFS" H 1550 1924 50  0000 C CNN
+F 2 "SamacSys_Parts:PTS810SJG250SMTRLFS" H 2000 1850 50  0001 L CNN
+F 3 "https://www.ckswitches.com/media/1476/pts810.pdf" H 2000 1750 50  0001 L CNN
+F 4 "PTS810SJG250SMTRLFS (Tactile Switches) Switch Tactile N.O. SPST Button J-Bend 0.05A 16VDC 100000Cycles 3.92N SMD T/R" H 2000 1650 50  0001 L CNN "Description"
+F 5 "C & K COMPONENTS" H 2000 1450 50  0001 L CNN "Manufacturer_Name"
+F 6 "PTS810SJG250SMTRLFS" H 2000 1350 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "135-9492" H 2000 1250 50  0001 L CNN "RS Part Number"
+F 8 "611-PTS810SJG250SMTR" H 2000 1050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=611-PTS810SJG250SMTR" H 2000 950 50  0001 L CNN "Mouser Price/Stock"
+	1    950  1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 850  1850
+$Comp
+L SamacSys_Parts:PTS810SJG250SMTRLFS S2
+U 1 1 5C64EBFD
+P 2950 3350
+F 0 "S2" H 3550 3615 50  0000 C CNN
+F 1 "PTS810SJG250SMTRLFS" H 3550 3524 50  0000 C CNN
+F 2 "SamacSys_Parts:PTS810SJG250SMTRLFS" H 4000 3450 50  0001 L CNN
+F 3 "https://www.ckswitches.com/media/1476/pts810.pdf" H 4000 3350 50  0001 L CNN
+F 4 "PTS810SJG250SMTRLFS (Tactile Switches) Switch Tactile N.O. SPST Button J-Bend 0.05A 16VDC 100000Cycles 3.92N SMD T/R" H 4000 3250 50  0001 L CNN "Description"
+F 5 "C & K COMPONENTS" H 4000 3050 50  0001 L CNN "Manufacturer_Name"
+F 6 "PTS810SJG250SMTRLFS" H 4000 2950 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "135-9492" H 4000 2850 50  0001 L CNN "RS Part Number"
+F 8 "611-PTS810SJG250SMTR" H 4000 2650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=611-PTS810SJG250SMTR" H 4000 2550 50  0001 L CNN "Mouser Price/Stock"
+	1    2950 3350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3300 3250 3350 3250
+	4150 3450 4300 3450
+Wire Wire Line
+	4300 3450 4300 3350
+Wire Wire Line
+	4300 3350 4150 3350
+Wire Wire Line
+	4300 3350 4300 3250
+Wire Wire Line
+	4300 3250 4350 3250
+Connection ~ 4300 3350
+Connection ~ 4350 3250
 $EndSCHEMATC
