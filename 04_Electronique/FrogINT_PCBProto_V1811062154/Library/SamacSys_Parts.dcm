@@ -1,34 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP FT2232HL-REEL
-D FTDI Chip FT2232HL-REEL, USB Controller, 4-channel, 480MBps, USB 2.0, 64-Pin LQFP
-F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf
-$ENDCMP
-#
 $CMP NE555DR
 D Single Precision Timer
-F http://www.ti.com/lit/ds/symlink/ne555.pdf
-$ENDCMP
-#
-$CMP SKQGAKE010
-D Tact switch,SMT,SPST,with stem,3.43N o/f Stem Tactile Switch, SPST-NO 50 mA 1.5mm
-F http://uk.rs-online.com/webdocs/10d6/0900766b810d6137.pdf
-$ENDCMP
-#
-$CMP TTP223-BA6
-D 1 KEY TOUCH PAD DETECTOR IC
-F https://radiokot.ru/konkursCatDay2014/53/01.pdf
-$ENDCMP
-#
-$CMP TouchSensePanel
-D Capacitive touche sense pad for TTP223
-K touch sense pad
-$ENDCMP
-#
-$CMP PTS810SJG250SMTRLFS
-D PTS810SJG250SMTRLFS (Tactile Switches) Switch Tactile N.O. SPST Button J-Bend 0.05A 16VDC 100000Cycles 3.92N SMD T/R
 K
-F https://www.ckswitches.com/media/1476/pts810.pdf
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
 $ENDCMP
 #
 #End Doc Library
