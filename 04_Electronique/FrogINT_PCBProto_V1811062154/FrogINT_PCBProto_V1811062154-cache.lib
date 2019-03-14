@@ -244,29 +244,6 @@ X PB1 9 600 1400 100 L 50 50 1 1 T
 ENDDRAW
 ENDDEF
 #
-# FrogINT_PCBProto_V1811062154-rescue_SKQGAKE010-SamacSys_Parts
-#
-DEF FrogINT_PCBProto_V1811062154-rescue_SKQGAKE010-SamacSys_Parts S 0 30 Y Y 1 F N
-F0 "S" 650 300 50 H V L CNN
-F1 "FrogINT_PCBProto_V1811062154-rescue_SKQGAKE010-SamacSys_Parts" 650 200 50 H V L CNN
-F2 "SKQGAKE010" 650 100 50 H I L CNN
-F3 "http://uk.rs-online.com/webdocs/10d6/0900766b810d6137.pdf" 650 0 50 H I L CNN
-F4 "Tact switch,SMT,SPST,with stem,3.43N o/f Stem Tactile Switch, SPST-NO 50 mA 1.5mm" 650 -100 50 H I L CNN "Description"
-F5 "ALPS" 650 -300 50 H I L CNN "Manufacturer_Name"
-F6 "SKQGAKE010" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
-F7 "7582076P" 650 -500 50 H I L CNN "RS Part Number"
-F8 "http://uk.rs-online.com/web/p/products/7582076P" 650 -600 50 H I L CNN "RS Price/Stock"
-F9 "688-SKQGAKE010" 650 -700 50 H I L CNN "Mouser Part Number"
-F10 "https://www.mouser.com/Search/Refine.aspx?Keyword=688-SKQGAKE010" 650 -800 50 H I L CNN "Mouser Price/Stock"
-DRAW
-P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
-X 1 1 0 0 200 R 50 50 0 0 B
-X 2 2 0 -100 200 R 50 50 0 0 B
-X 3 3 800 0 200 L 50 50 0 0 B
-X 4 4 800 -100 200 L 50 50 0 0 B
-ENDDRAW
-ENDDEF
-#
 # FrogINT_PCBProto_V1811062154-rescue_TTP223-BA6-SamacSys_Parts
 #
 DEF FrogINT_PCBProto_V1811062154-rescue_TTP223-BA6-SamacSys_Parts IC 0 30 Y Y 1 F N
@@ -407,6 +384,27 @@ S -200 -200 200 75 0 1 10 f
 X GND 1 0 -300 100 U 50 50 1 1 W
 X VO 2 300 0 100 L 50 50 1 1 w
 X VI 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_PTS810SJG250SMTRLFS
+#
+DEF SamacSys_Parts_PTS810SJG250SMTRLFS S 0 30 Y Y 1 F N
+F0 "S" 1050 300 50 H V L CNN
+F1 "SamacSys_Parts_PTS810SJG250SMTRLFS" 1050 200 50 H V L CNN
+F2 "PTS810SJG250SMTRLFS" 1050 100 50 H I L CNN
+F3 "https://www.ckswitches.com/media/1476/pts810.pdf" 1050 0 50 H I L CNN
+F4 "PTS810SJG250SMTRLFS (Tactile Switches) Switch Tactile N.O. SPST Button J-Bend 0.05A 16VDC 100000Cycles 3.92N SMD T/R" 1050 -100 50 H I L CNN "Description"
+F5 "C & K COMPONENTS" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F6 "PTS810SJG250SMTRLFS" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "611-PTS810SJG250SMTR" 1050 -700 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.com/Search/Refine.aspx?Keyword=611-PTS810SJG250SMTR" 1050 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -200 200 -200 200 100 N
+X NO_1 1 0 0 200 R 50 50 0 0 B
+X NO_2 2 0 -100 200 R 50 50 0 0 B
+X COM_1 3 1200 0 200 L 50 50 0 0 B
+X COM_2 4 1200 -100 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
