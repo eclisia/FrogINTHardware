@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "FrogINT"
-Date "2018-11-15"
-Rev "Rev-00"
+Date "2019-03-14"
+Rev "V02.00.00"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -179,17 +179,6 @@ Wire Wire Line
 	2250 1750 2550 1750
 Wire Wire Line
 	6600 4350 9500 4350
-$Comp
-L Connector:AVR-JTAG-10 J3
-U 1 1 5BEA8A20
-P 10000 4150
-F 0 "J3" H 9621 4196 50  0000 R CNN
-F 1 "AVR-JTAG-10" H 9621 4105 50  0000 R CNN
-F 2 "FTA_FrogINT_Library_Footprint_Package:PinHeader_2x05_P2.54mm_Vertical" V 9850 4300 50  0001 C CNN
-F 3 " ~" H 8725 3600 50  0001 C CNN
-	1    10000 4150
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6600 4250 9500 4250
 Wire Wire Line
@@ -212,38 +201,27 @@ Wire Wire Line
 $Comp
 L power:GND #PWR029
 U 1 1 5BEAA0D2
-P 10000 4850
-F 0 "#PWR029" H 10000 4600 50  0001 C CNN
-F 1 "GND" H 10005 4677 50  0000 C CNN
-F 2 "" H 10000 4850 50  0001 C CNN
-F 3 "" H 10000 4850 50  0001 C CNN
-	1    10000 4850
+P 10050 4800
+F 0 "#PWR029" H 10050 4550 50  0001 C CNN
+F 1 "GND" H 10055 4627 50  0000 C CNN
+F 2 "" H 10050 4800 50  0001 C CNN
+F 3 "" H 10050 4800 50  0001 C CNN
+	1    10050 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 4750 10000 4850
 Wire Notes Line
 	10950 5100 9050 5100
 $Comp
 L power:+3.3V #PWR028
 U 1 1 5BEAB64E
-P 10000 3450
-F 0 "#PWR028" H 10000 3300 50  0001 C CNN
-F 1 "+3.3V" H 10015 3623 50  0000 C CNN
-F 2 "" H 10000 3450 50  0001 C CNN
-F 3 "" H 10000 3450 50  0001 C CNN
-	1    10000 3450
+P 10050 3300
+F 0 "#PWR028" H 10050 3150 50  0001 C CNN
+F 1 "+3.3V" H 10065 3473 50  0000 C CNN
+F 2 "" H 10050 3300 50  0001 C CNN
+F 3 "" H 10050 3300 50  0001 C CNN
+	1    10050 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10000 3450 10000 3500
-Wire Wire Line
-	10100 3550 10100 3500
-Wire Wire Line
-	10100 3500 10000 3500
-Connection ~ 10000 3500
-Wire Wire Line
-	10000 3500 10000 3550
 $Comp
 L LED:WS2812B D1
 U 1 1 5BEAC2A4
@@ -407,7 +385,7 @@ U 1 1 5BEE5215
 P 800 4900
 F 0 "J1" H 855 5367 50  0000 C CNN
 F 1 "USB_B_Mini" H 855 5276 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 950 4850 50  0001 C CNN
+F 2 "FTA_FrogINT_Library_Footprint_Package:47642-0001_Molex_USB" H 950 4850 50  0001 C CNN
 F 3 "~" H 950 4850 50  0001 C CNN
 	1    800  4900
 	1    0    0    -1  
@@ -1017,127 +995,6 @@ Wire Wire Line
 	6600 2050 7200 2050
 Text Label 6800 2050 0    50   ~ 0
 Input_Int_Touch
-Text Label 8250 5700 0    50   ~ 0
-Input_Int_Touch
-Wire Wire Line
-	8850 5700 8250 5700
-Wire Wire Line
-	8850 5800 8450 5800
-Text Label 7850 5800 0    50   ~ 0
-Cap-TouchSensor
-$Comp
-L power:GND #PWR027
-U 1 1 5C375D63
-P 8750 6250
-F 0 "#PWR027" H 8750 6000 50  0001 C CNN
-F 1 "GND" H 8755 6077 50  0000 C CNN
-F 2 "" H 8750 6250 50  0001 C CNN
-F 3 "" H 8750 6250 50  0001 C CNN
-	1    8750 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 5900 8750 5900
-Wire Wire Line
-	8750 5900 8750 6200
-$Comp
-L Device:C C11
-U 1 1 5C37BB9A
-P 8450 6000
-F 0 "C11" H 8300 5950 50  0000 C CNN
-F 1 "22pF" H 8250 6100 50  0000 C CNN
-F 2 "FTA_FrogINT_Library_Footprint_Package:CP_EIA-2012-12_Kemet-R" H 8488 5850 50  0001 C CNN
-F 3 "~" H 8450 6000 50  0001 C CNN
-	1    8450 6000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8450 5850 8450 5800
-Connection ~ 8450 5800
-Wire Wire Line
-	8450 5800 7800 5800
-Wire Wire Line
-	8450 6150 8450 6200
-Wire Wire Line
-	8450 6200 8750 6200
-Connection ~ 8750 6200
-Wire Wire Line
-	8750 6200 8750 6250
-$Comp
-L FrogINT_PCBProto_V1811062154-rescue:TTP223-BA6-SamacSys_Parts IC1
-U 1 1 5C3A6478
-P 8850 5700
-F 0 "IC1" H 9400 5965 50  0000 C CNN
-F 1 "TTP223-BA6" H 9400 5874 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P285X126-6N" H 9800 5800 50  0001 L CNN
-F 3 "https://radiokot.ru/konkursCatDay2014/53/01.pdf" H 9800 5700 50  0001 L CNN
-F 4 "1 KEY TOUCH PAD DETECTOR IC" H 9800 5600 50  0001 L CNN "Description"
-F 5 "1.26" H 9800 5500 50  0001 L CNN "Height"
-F 6 "TONTEK" H 9800 5400 50  0001 L CNN "Manufacturer_Name"
-F 7 "TTP223-BA6" H 9800 5300 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 9800 5200 50  0001 L CNN "RS Part Number"
-F 9 "" H 9800 5100 50  0001 L CNN "RS Price/Stock"
-F 10 "" H 9800 5000 50  0001 L CNN "Mouser Part Number"
-F 11 "" H 9800 4900 50  0001 L CNN "Mouser Price/Stock"
-	1    8850 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR030
-U 1 1 5C3A6566
-P 10050 6250
-F 0 "#PWR030" H 10050 6000 50  0001 C CNN
-F 1 "GND" H 10055 6077 50  0000 C CNN
-F 2 "" H 10050 6250 50  0001 C CNN
-F 3 "" H 10050 6250 50  0001 C CNN
-	1    10050 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 5900 10050 5900
-Wire Wire Line
-	10050 5900 10050 6200
-Wire Wire Line
-	9950 5800 10050 5800
-Wire Wire Line
-	10050 5800 10050 5900
-Connection ~ 10050 5900
-$Comp
-L power:+5V #PWR031
-U 1 1 5C3B3123
-P 10300 5600
-F 0 "#PWR031" H 10300 5450 50  0001 C CNN
-F 1 "+5V" H 10315 5773 50  0000 C CNN
-F 2 "" H 10300 5600 50  0001 C CNN
-F 3 "" H 10300 5600 50  0001 C CNN
-	1    10300 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 5700 10300 5700
-$Comp
-L Device:C C12
-U 1 1 5C3B9993
-P 10300 5950
-F 0 "C12" H 10150 5900 50  0000 C CNN
-F 1 "100nF" H 10100 6050 50  0000 C CNN
-F 2 "FTA_FrogINT_Library_Footprint_Package:CP_EIA-2012-12_Kemet-R" H 10338 5800 50  0001 C CNN
-F 3 "~" H 10300 5950 50  0001 C CNN
-	1    10300 5950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10300 5700 10300 5600
-Wire Wire Line
-	10300 5800 10300 5700
-Connection ~ 10300 5700
-Wire Wire Line
-	10300 6100 10300 6200
-Wire Wire Line
-	10300 6200 10050 6200
-Connection ~ 10050 6200
-Wire Wire Line
-	10050 6200 10050 6250
 Wire Notes Line
 	6950 5200 10950 5200
 Wire Notes Line
@@ -1148,17 +1005,6 @@ Wire Notes Line
 	6950 6500 6950 5200
 Text Notes 6950 5300 0    50   ~ 0
 Touch Sense
-$Comp
-L FrogINT_PCBProto_V1811062154-rescue:TouchSense-FTA_FrogINT_library TS1
-U 1 1 5C39FC70
-P 7400 5800
-F 0 "TS1" H 7456 6265 50  0000 C CNN
-F 1 "TouchSense" H 7456 6174 50  0000 C CNN
-F 2 "FTA_FrogINT_Library_Footprint_Package:CapacitiveTouchSense_Bottom_10mm" H 7400 5800 50  0001 C CNN
-F 3 "" H 7400 5800 50  0001 C CNN
-	1    7400 5800
-	1    0    0    -1  
-$EndComp
 NoConn ~ 6600 2950
 Wire Wire Line
 	750  1850 850  1850
@@ -1186,7 +1032,7 @@ Connection ~ 2900 3350
 Wire Wire Line
 	2900 3350 2950 3350
 $Comp
-L SamacSys_Parts:PTS810SJG250SMTRLFS S1
+L FrogINT_PCBProto_V1811062154-rescue:PTS810SJG250SMTRLFS-SamacSys_Parts S1
 U 1 1 5C636FCC
 P 950 1750
 F 0 "S1" H 1550 2015 50  0000 C CNN
@@ -1204,7 +1050,7 @@ F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=611-PTS810SJG250SMTR" H 2
 $EndComp
 Connection ~ 850  1850
 $Comp
-L SamacSys_Parts:PTS810SJG250SMTRLFS S2
+L FrogINT_PCBProto_V1811062154-rescue:PTS810SJG250SMTRLFS-SamacSys_Parts S2
 U 1 1 5C64EBFD
 P 2950 3350
 F 0 "S2" H 3550 3615 50  0000 C CNN
@@ -1232,4 +1078,92 @@ Wire Wire Line
 	4300 3250 4350 3250
 Connection ~ 4300 3350
 Connection ~ 4350 3250
+Text Label 7550 5800 0    50   ~ 0
+Input_Int_Touch
+$Comp
+L power:+3.3V #PWR027
+U 1 1 5C8D1B06
+P 7400 5700
+F 0 "#PWR027" H 7400 5550 50  0001 C CNN
+F 1 "+3.3V" H 7415 5873 50  0000 C CNN
+F 2 "" H 7400 5700 50  0001 C CNN
+F 3 "" H 7400 5700 50  0001 C CNN
+	1    7400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5C8D1B4F
+P 8250 6050
+F 0 "#PWR030" H 8250 5800 50  0001 C CNN
+F 1 "GND" H 8255 5877 50  0000 C CNN
+F 2 "" H 8250 6050 50  0001 C CNN
+F 3 "" H 8250 6050 50  0001 C CNN
+	1    8250 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5C8D1D5D
+P 8500 5900
+F 0 "J3" H 8580 5942 50  0000 L CNN
+F 1 "Conn_01x03" H 8580 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 8500 5900 50  0001 C CNN
+F 3 "~" H 8500 5900 50  0001 C CNN
+	1    8500 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5800 7550 5800
+Wire Wire Line
+	7400 5700 7400 5900
+Wire Wire Line
+	7400 5900 8300 5900
+Wire Wire Line
+	8300 6000 8250 6000
+Wire Wire Line
+	8250 6000 8250 6050
+Text Notes 8450 5600 0    50   ~ 0
+Vers module Touch Sense
+Text Notes 8550 6150 0    50   Italic 0
+Connector 2.54mm 3 point coudé
+$Comp
+L SamacSys_Parts:852-80-010-10-001101 J4
+U 1 1 5C8FCE9A
+P 9500 3850
+F 0 "J4" H 9750 4200 50  0000 C CNN
+F 1 "JTAG" V 10200 3750 50  0000 C CNN
+F 2 "FTA_FrogINT_Library_Footprint_Package:JTAG_HDRV10W41P127_2X5_676X325X510P" H 10250 3950 50  0001 L CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/0e67/0900766b80e679cc.pdf" H 10250 3850 50  0001 L CNN
+F 4 "Preci-Dip 1.27mm 10 Way 2 Row Straight Through Hole Male Connector Strip" H 10250 3750 50  0001 L CNN "Description"
+F 5 "5.1" H 10250 3650 50  0001 L CNN "Height"
+F 6 "Preci-Dip" H 10250 3550 50  0001 L CNN "Manufacturer_Name"
+F 7 "852-80-010-10-001101" H 10250 3450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "437-8528001010001101" H 10250 3350 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=437-8528001010001101" H 10250 3250 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7020262P" H 10250 3150 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7020262P" H 10250 3050 50  0001 L CNN "RS Price/Stock"
+F 12 "R1023400" H 10250 2950 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/preci-dipsa-852-80-010-10-001101/R1023400/" H 10250 2850 50  0001 L CNN "Allied Price/Stock"
+	1    9500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 4800 10050 4700
+Wire Wire Line
+	9950 4600 9950 4700
+Wire Wire Line
+	9950 4700 10050 4700
+Connection ~ 10050 4700
+Wire Wire Line
+	10050 4700 10050 4600
+Wire Wire Line
+	10050 3300 10050 3350
+Wire Wire Line
+	9950 3400 9950 3350
+Wire Wire Line
+	9950 3350 10050 3350
+Connection ~ 10050 3350
+Wire Wire Line
+	10050 3350 10050 3400
 $EndSCHEMATC
