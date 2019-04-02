@@ -10,4 +10,10 @@ D Single Precision Timer
 F http://www.ti.com/lit/ds/symlink/ne555.pdf
 $ENDCMP
 #
+$CMP MF-MSMF050-2
+D Fuse, PTC, Resettable, SMD, 1812, 500mA Bourns 0.5A Surface Mount Resettable Fuse, 15 V
+K
+F https://www.bourns.com/pdfs/mfmsmf.pdf
+$ENDCMP
+#
 #End Doc Library
