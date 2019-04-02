@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1140)
+    (start_pass_no 1389)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -41,10 +41,16 @@
     (attach off)
   )
   (via 
+    "Via[0-1]_800:400_um-Sense" "Via[0-1]_800:400_um" Sense
+  )
+  (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    Sense "Via[0-1]_800:400_um-Sense"
   )
   (via_rule
     default "Via[0-1]_800:400_um"
@@ -63,14 +69,21 @@
     )
   )
   (class "kicad_default"
-    GND "Net-(C1-Pad1)" VBUS "Net-(C3-Pad2)" +3V3 "Net-(C5-Pad1)" "Net-(C6-Pad1)" +5V
-    "Net-(D1-Pad4)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J1-Pad4)" /Vin
-    "Net-(J3-Pad1)" "Net-(J3-Pad3)" "Net-(J3-Pad5)" /reset "Net-(J3-Pad9)" "/Input_Interrupt" /D+ "/D-"
-    "Net-(U2-Pad4)" "Net-(U3-Pad1)" "Net-(U3-Pad6)" "Net-(U3-Pad9)" "Net-(U3-Pad10)" "Net-(U3-Pad11)" "Net-(U3-Pad18)" "Net-(U3-Pad19)"
-    "Net-(U3-Pad20)" "Net-(U3-Pad21)" "Net-(U3-Pad22)" "Net-(U3-Pad25)" "Net-(U3-Pad26)" "Net-(U3-Pad27)" "Net-(U3-Pad28)" "Net-(U3-Pad29)"
-    "Net-(U3-Pad30)" "Net-(U3-Pad31)" "Net-(U3-Pad32)" "Net-(U3-Pad33)" "Net-(U3-Pad40)" "Net-(U3-Pad41)"
+    GND "Net-(C1-Pad1)" +3V3 "Net-(C5-Pad1)" "Net-(C6-Pad1)" /reset "/Input_Interrupt" /D+
+    "/D-" "/Input_Int_Touch" "Net-(J4-Pad1)" "Net-(J4-Pad3)" "Net-(J4-Pad5)" "Net-(J4-Pad9)" "Net-(L1-Pad2)" "Net-(L1-Pad5)"
+    "Net-(L2-Pad5)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Sense
+    (clearance_class Sense)
+    (via_rule Sense)
     (rule
       (width 250.0)
     )

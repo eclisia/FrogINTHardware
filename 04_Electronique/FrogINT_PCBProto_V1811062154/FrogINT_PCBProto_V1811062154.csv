@@ -1,21 +1,16 @@
-Component;Description;Part;References;Value;Footprint;Quantity Per PCB;Datasheet;Manufacturer_Name;Height;Manufacturer_Part_Number;Mouser Part Number;Mouser Price/Stock;RS Price/Stock;RS Part Number
-1;Unpolarized capacitor;C;C4 C7;0.1µF;CP_EIA-2012-12_Kemet-R;2;;;;;;;;
-2;Unpolarized capacitor;C;C2 C3 C10 C12;100nF;CP_EIA-2012-12_Kemet-R;4;;;;;;;;
-3;Unpolarized capacitor;C;C8;1µF;CP_EIA-2012-12_Kemet-R;1;;;;;;;;
-4;Unpolarized capacitor;C;C5 C6 C11;22pF;CP_EIA-2012-12_Kemet-R;3;;;;;;;;
-5;Polarized capacitor;CP;C1 C9;22µF;CP_EIA-2012-12_Kemet-R;2;;;;;;;;
-6;RGB LED with integrated controller;WS2812B;D1 D2 D3;WS2812B;LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;3;https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf;;;;;;;
-7;Resettable fuse, polymeric positive temperature coefficient, small symbol;Polyfuse_Small;F1;Polyfuse MF-MSMF050-2;Fuse_1206_3216Metric;1;;;;;;;;
-8;;TTP223-BA6-SamacSys_Parts;IC1;TTP223-BA6;SOT95P285X126-6N;1;https://radiokot.ru/konkursCatDay2014/53/01.pdf;TONTEK;1.26;TTP223-BA6;;;;
-9;Atmel 10-pin JTAG connector;AVR-JTAG-10;J3;AVR-JTAG-10;PinHeader_2x05_P2.54mm_Vertical;1;;;;;;;;
-10;Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/);Conn_01x01_Female;J2;Conn_01x01_Female;TestPoint_Pad_D1.0mm;1;;;;;;;;
-11;;USB_B_Mini-Connector_FTA;J1;USB_B_Mini;USB_Micro-B_Amphenol_10103594-0001LF_Horizontal;1;;;;;;;;
-12;P-MOSFET transistor, drain/gate/source;Q_PMOS_DGS;Q1 Q2;PMV48XP;SOT-23-6;2;;;;;;;;
-13;Resistor;R;R1 R4 R5 R6;10k;R_0603_1608Metric;4;;;;;;;;
-14;Resistor;R;R2 R3;22;R_0603_1608Metric;2;;;;;;;;
-15;;SKQGAKE010-SamacSys_Parts;S1 S2;SKQGAKE010;SKQGAKE010;2;http://uk.rs-online.com/webdocs/10d6/0900766b810d6137.pdf;ALPS;;SKQGAKE010;688-SKQGAKE010;https://www.mouser.com/Search/Refine.aspx?Keyword=688-SKQGAKE010;http://uk.rs-online.com/web/p/products/7582076P;7582076P
-16;;TouchSense-FTA_FrogINT_library;TS1;TouchSense;CapacitiveTouchSense_Bottom_10mm;1;;;;;;;;
-17;;ATmega16U4RC-AU;U3;ATmega16U4RC-AU;TQFP-44_10x10mm_P0.8mm;1;;;;;;;;
-18;150mA 16V Low-noise Low-dropout Regulator With Shutdown, 1.8V output voltage, SOT-23-5;LP2985-3.3;U2;LP2985-3.3;SOT-23-5;1;http://www.ti.com/lit/ds/symlink/lp2985.pdf;;;;;;;
-19;1A Low Dropout regulator, positive, 1.5V fixed output, SOT-223;NCP1117-5.0_SOT223;U1;NCP1117-5.0_SOT223;SOT-223-3_TabPin2;1;http://www.diodes.com/datasheets/AP1117.pdf;;;;;;;
-20;Two pin crystal;Crystal;Y1;16MHz;Crystal_HC49-U_Vertical;1;;;;;;;;
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"G***";"Logo_Thales_Silk_Bottom";1;"LOGO";;;
+2;"G***";"Logo_CCSL_Silk_Bottom";1;"LOGO";;;
+3;"L3,L2,L1";"WS2812-LED_HeatSink";3;"LED";;;
+4;"F1";"FUSC4632X85N";1;"Polyfuse MF-MSMF050-2";;;
+5;"J1";"47642-0001_Molex_USB";1;"USB_B_Mini";;;
+6;"Y1";"Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm_HandSoldering";1;"XTal TSX-3225 16MHz";;;
+7;"C1";"CP_EIA-2012-12_Kemet-R";1;"22µF";;;
+8;"C2";"CP_EIA-2012-12_Kemet-R";1;"100nF";;;
+9;"C5,C6,C11";"CP_EIA-2012-12_Kemet-R";3;"22pF";;;
+10;"J3";"PinSocket_1x03_P2.54mm_Horizontal";1;"Conn_01x03";;;
+11;"J4";"JTAG_HDRV10W41P127_2X5_676X325X510P";1;"JTAG";;;
+12;"J5";"TestPoint_THTPad_D2.5mm_Drill1.2mm";1;"Conn_01x01_Female";;;
+13;"R1,R5,R6";"R_0603_1608Metric";3;"10k";;;
+14;"R2,R3";"R_0603_1608Metric";2;"22";;;
+15;"U3";"TQFP-44_10x10mm_P0.8mm";1;"ATmega16U4-AU";;;
